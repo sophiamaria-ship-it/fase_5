@@ -1,0 +1,8 @@
+Link do video de apresentacao (YouTube - Nao listado):
+
+>>> SUBSTITUA ESTA LINHA PELO LINK DO VIDEO DEPOIS DE PUBLICA-LO <<<
+
+Instrucoes:
+1. Grave um video de ate 5 minutos demonstrando o NCAS (siga os topicos do item 2 do enunciado).
+2. Publique no YouTube com visibilidade "Nao listado".
+3. Copie o link do video e cole nesta linha, substituindo o texto acima.

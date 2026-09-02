@@ -1,0 +1,75 @@
+{
+    "modulos": [
+        {
+            "id": 1,
+            "nome": "Modulo de Suporte a Vida",
+            "status": "ativo",
+            "responsavel": "Eng. Marina Costa"
+        },
+        {
+            "id": 2,
+            "nome": "Modulo de Energia",
+            "status": "ativo",
+            "responsavel": "Eng. Rafael Nunes"
+        },
+        {
+            "id": 3,
+            "nome": "Modulo de Comunicacoes",
+            "status": "inativo",
+            "responsavel": "Eng. Aline Souza"
+        }
+    ],
+    "alertas": [
+        {
+            "id": 1,
+            "modulo": "Modulo de Energia",
+            "tipo_ocorrencia": "Consumo elevado",
+            "prioridade": "alta",
+            "data": "2026-08-20",
+            "mensagem": "Consumo energetico 30% acima do limite operacional.",
+            "falha": true,
+            "critico": true
+        },
+        {
+            "id": 2,
+            "modulo": "Modulo de Comunicacoes",
+            "tipo_ocorrencia": "Sinal instavel",
+            "prioridade": "media",
+            "data": "2026-08-22",
+            "mensagem": "Perda intermitente de sinal com a base central.",
+            "falha": true,
+            "critico": false
+        }
+    ],
+    "solicitacoes": [
+        {
+            "id": 1,
+            "tripulante": "Tripulante Joao Pedro",
+            "setor": "Engenharia",
+            "urgente": true,
+            "descricao": "Solicita inspecao imediata no modulo de energia.",
+            "data": "2026-08-20"
+        },
+        {
+            "id": 2,
+            "tripulante": "Tripulante Carla Dias",
+            "setor": "Biologia",
+            "urgente": false,
+            "descricao": "Solicita relatorio semanal de consumo de agua.",
+            "data": "2026-08-21"
+        }
+    ],
+    "historico_respostas": [
+        {
+            "id": 1,
+            "prompt_usado": "Gere uma resposta padronizada ao centro de controle em formato JSON, com os campos: modulo, nivel_risco e recomendacao, a partir do seguinte alerta: Consumo energetico 30% acima do limite operacional.\nResponda apenas com um objeto JSON valido.",
+            "resposta": {
+                "modulo": "Modulo de Energia",
+                "nivel_risco": "alto",
+                "recomendacao": "Acionar equipe de manutencao imediatamente e isolar o modulo.",
+                "resumo": "Alerta em Modulo de Energia: Consumo energetico 30% acima do limite operacional."
+            },
+            "data": "2026-09-02 02:15:08"
+        }
+    ]
+}
