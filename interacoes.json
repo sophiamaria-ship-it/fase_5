@@ -1,0 +1,187 @@
+{
+    "interacoes": [
+        {
+            "id": 1,
+            "timestamp": "2026-09-05 00:31:43",
+            "contexto": "zero_shot",
+            "prompt": "Resuma o alerta operacional a seguir em ate 2 frases, destacando o modulo afetado e o nivel de risco.\n\nAlerta: Redundancia ativada automaticamente pelo sistema",
+            "resposta": {
+                "resumo": "O modulo Modulo Habitacional B apresentou vazamento detectado, classificado como prioridade alta.",
+                "nivel_risco": "alta",
+                "recomendacao": "Acionar equipe de manutencao"
+            }
+        },
+        {
+            "id": 2,
+            "timestamp": "2026-08-26 07:03:43",
+            "contexto": "few_shot",
+            "prompt": "Resuma o alerta operacional a seguir em ate 2 frases, destacando o modulo afetado e o nivel de risco.\n\nAlerta: Redundancia ativada automaticamente pelo sistema",
+            "resposta": {
+                "resumo": "O modulo Modulo de Suporte Vital apresentou pico de consumo energetico, classificado como prioridade media.",
+                "nivel_risco": "media",
+                "recomendacao": "Acionar equipe de manutencao"
+            }
+        },
+        {
+            "id": 3,
+            "timestamp": "2026-09-05 20:33:43",
+            "contexto": "zero_shot",
+            "prompt": "Resuma o alerta operacional a seguir em ate 2 frases, destacando o modulo afetado e o nivel de risco.\n\nAlerta: Parametro fora da faixa operacional segura",
+            "resposta": {
+                "resumo": "O modulo Modulo de Producao de Oxigenio apresentou temperatura fora do padrao, classificado como prioridade critica.",
+                "nivel_risco": "critica",
+                "recomendacao": "Monitorar continuamente"
+            }
+        },
+        {
+            "id": 4,
+            "timestamp": "2026-09-05 14:46:43",
+            "contexto": "few_shot",
+            "prompt": "Resuma o alerta operacional a seguir em ate 2 frases, destacando o modulo afetado e o nivel de risco.\n\nAlerta: Parametro fora da faixa operacional segura",
+            "resposta": {
+                "resumo": "O modulo Modulo de Producao de Oxigenio apresentou temperatura fora do padrao, classificado como prioridade critica.",
+                "nivel_risco": "critica",
+                "recomendacao": "Monitorar continuamente"
+            }
+        },
+        {
+            "id": 5,
+            "timestamp": "2026-08-25 17:31:43",
+            "contexto": "structured_output",
+            "prompt": "Resuma o alerta operacional a seguir em ate 2 frases, destacando o modulo afetado e o nivel de risco.\n\nAlerta: Redundancia ativada automaticamente pelo sistema",
+            "resposta": {
+                "resumo": "O modulo Modulo Habitacional B apresentou vazamento detectado, classificado como prioridade alta.",
+                "nivel_risco": "alta",
+                "recomendacao": "Acionar equipe de manutencao"
+            }
+        },
+        {
+            "id": 6,
+            "timestamp": "2026-08-25 14:03:43",
+            "contexto": "few_shot",
+            "prompt": "Resuma o alerta operacional a seguir em ate 2 frases, destacando o modulo afetado e o nivel de risco.\n\nAlerta: Sensor reportou leitura instavel nas ultimas 2 horas",
+            "resposta": {
+                "resumo": "O modulo Modulo de Producao de Oxigenio apresentou falha de comunicacao, classificado como prioridade critica.",
+                "nivel_risco": "critica",
+                "recomendacao": "Acionar equipe de manutencao"
+            }
+        },
+        {
+            "id": 7,
+            "timestamp": "2026-09-08 19:14:22",
+            "contexto": "zero_shot",
+            "prompt": "Voce e o assistente do Nucleo Cognitivo da Aurora Siger. Resuma o alerta operacional a seguir em ate 2 frases, destacando o modulo afetado e o nivel de risco.\n\nAlerta: Modulo de Producao de Oxigenio: Parametro fora da faixa operacional segura",
+            "resposta": {
+                "tipo": "zero_shot",
+                "resumo": "Alerta detectado: Parametro fora da faixa operacional segura...",
+                "nivel_risco": "BAIXO",
+                "recomendacao": "Monitorar e documentar ocorrencia",
+                "modulo_afetado": "Modulo de Producao de Oxigenio"
+            }
+        },
+        {
+            "id": 8,
+            "timestamp": "2026-09-08 19:14:22",
+            "contexto": "few_shot",
+            "prompt": "Classifique a solicitacao da tripulacao em uma das categorias: URGENTE, ROTINA ou INFORMATIVA.\n\nExemplo 1:\nSolicitacao: 'Vazamento de oxigenio no modulo 2 - risco imediato'\nCategoria: URGENTE\n\nExemplo 2:\nSolicitacao: 'Relatorio semanal de consumo de agua'\nCategoria: ROTINA\n\nExemplo 3:\nSolicitacao: 'Comunicado sobre treinamento de novos tripulantes'\nCategoria: INFORMATIVA\n\nAgora classifique:\nSolicitacao: 'Modulo de Producao de Oxigenio: Falha no sensor'\nCategoria:",
+            "resposta": {
+                "tipo": "few_shot",
+                "categoria": "URGENTE",
+                "classificacao": "Solicitacao classificada como URGENTE",
+                "justificativa": "Baseado na analise do conteudo: 'Falha no sensor: Parametro for...'"
+            }
+        },
+        {
+            "id": 9,
+            "timestamp": "2026-09-08 19:14:22",
+            "contexto": "saida_estruturada",
+            "prompt": "Gere uma resposta padronizada ao centro de controle em formato JSON, com os campos: modulo, nivel_risco, recomendacao, prioridade, data_estimada, e acao_imediata, a partir do seguinte alerta:\n\nModulo: Modulo de Producao de Oxigenio\nTipo: Falha no sensor\nPrioridade: media\nMensagem: Parametro fora da faixa operacional segura\n\nResponda apenas com um objeto JSON valido.",
+            "resposta": {
+                "modulo": "Modulo de Producao de Oxigenio",
+                "nivel_risco": "MEDIO",
+                "recomendacao": "Para o modulo Modulo de Producao de Oxigenio, recomenda-se verificacao tecnica imediata",
+                "prioridade": "media",
+                "data_estimada": "2026-09-08",
+                "acao_imediata": "Monitorar modulo"
+            }
+        },
+        {
+            "id": 10,
+            "timestamp": "2026-09-08 19:22:20",
+            "contexto": "zero_shot",
+            "prompt": "Voce e o assistente do Nucleo Cognitivo da Aurora Siger. Resuma o alerta operacional a seguir em ate 2 frases, destacando o modulo afetado e o nivel de risco.\n\nAlerta: Modulo de Producao de Oxigenio: Parametro fora da faixa operacional segura",
+            "resposta": {
+                "tipo": "zero_shot",
+                "resumo": "Alerta detectado: Parametro fora da faixa operacional segura...",
+                "nivel_risco": "BAIXO",
+                "recomendacao": "Monitorar e documentar ocorrencia",
+                "modulo_afetado": "Modulo de Producao de Oxigenio"
+            }
+        },
+        {
+            "id": 11,
+            "timestamp": "2026-09-08 19:22:20",
+            "contexto": "few_shot",
+            "prompt": "Classifique a solicitacao da tripulacao em uma das categorias: URGENTE, ROTINA ou INFORMATIVA.\n\nExemplo 1:\nSolicitacao: 'Vazamento de oxigenio no modulo 2 - risco imediato'\nCategoria: URGENTE\n\nExemplo 2:\nSolicitacao: 'Relatorio semanal de consumo de agua'\nCategoria: ROTINA\n\nExemplo 3:\nSolicitacao: 'Comunicado sobre treinamento de novos tripulantes'\nCategoria: INFORMATIVA\n\nAgora classifique:\nSolicitacao: 'Modulo de Producao de Oxigenio: Falha no sensor'\nCategoria:",
+            "resposta": {
+                "tipo": "few_shot",
+                "categoria": "URGENTE",
+                "classificacao": "Solicitacao classificada como URGENTE",
+                "justificativa": "Baseado na analise do conteudo: 'Falha no sensor: Parametro for...'"
+            }
+        },
+        {
+            "id": 12,
+            "timestamp": "2026-09-08 19:22:20",
+            "contexto": "saida_estruturada",
+            "prompt": "Gere uma resposta padronizada ao centro de controle em formato JSON, com os campos: modulo, nivel_risco, recomendacao, prioridade, data_estimada, e acao_imediata, a partir do seguinte alerta:\n\nModulo: Modulo de Producao de Oxigenio\nTipo: Falha no sensor\nPrioridade: media\nMensagem: Parametro fora da faixa operacional segura\n\nResponda apenas com um objeto JSON valido.",
+            "resposta": {
+                "modulo": "Modulo de Producao de Oxigenio",
+                "nivel_risco": "MEDIO",
+                "recomendacao": "Para o modulo Modulo de Producao de Oxigenio, recomenda-se verificacao tecnica imediata",
+                "prioridade": "media",
+                "data_estimada": "2026-09-08",
+                "acao_imediata": "Monitorar modulo"
+            }
+        },
+        {
+            "id": 13,
+            "timestamp": "2026-09-08 19:30:57",
+            "contexto": "zero_shot",
+            "prompt": "Voce e o assistente do Nucleo Cognitivo da Aurora Siger. Resuma o alerta operacional a seguir em ate 2 frases, destacando o modulo afetado e o nivel de risco.\n\nAlerta: Modulo de Producao de Oxigenio: Parametro fora da faixa operacional segura",
+            "resposta": {
+                "tipo": "zero_shot",
+                "resumo": "Alerta detectado: Parametro fora da faixa operacional segura...",
+                "nivel_risco": "BAIXO",
+                "recomendacao": "Monitorar e documentar ocorrencia",
+                "modulo_afetado": "Modulo de Producao de Oxigenio"
+            }
+        },
+        {
+            "id": 14,
+            "timestamp": "2026-09-08 19:30:57",
+            "contexto": "few_shot",
+            "prompt": "Classifique a solicitacao da tripulacao em uma das categorias: URGENTE, ROTINA ou INFORMATIVA.\n\nExemplo 1:\nSolicitacao: 'Vazamento de oxigenio no modulo 2 - risco imediato'\nCategoria: URGENTE\n\nExemplo 2:\nSolicitacao: 'Relatorio semanal de consumo de agua'\nCategoria: ROTINA\n\nExemplo 3:\nSolicitacao: 'Comunicado sobre treinamento de novos tripulantes'\nCategoria: INFORMATIVA\n\nAgora classifique:\nSolicitacao: 'Modulo de Producao de Oxigenio: Falha no sensor'\nCategoria:",
+            "resposta": {
+                "tipo": "few_shot",
+                "categoria": "URGENTE",
+                "classificacao": "Solicitacao classificada como URGENTE",
+                "justificativa": "Baseado na analise do conteudo: 'Falha no sensor: Parametro for...'"
+            }
+        },
+        {
+            "id": 15,
+            "timestamp": "2026-09-08 19:30:57",
+            "contexto": "saida_estruturada",
+            "prompt": "Gere uma resposta padronizada ao centro de controle em formato JSON, com os campos: modulo, nivel_risco, recomendacao, prioridade, data_estimada, e acao_imediata, a partir do seguinte alerta:\n\nModulo: Modulo de Producao de Oxigenio\nTipo: Falha no sensor\nPrioridade: media\nMensagem: Parametro fora da faixa operacional segura\n\nResponda apenas com um objeto JSON valido.",
+            "resposta": {
+                "modulo": "Modulo de Producao de Oxigenio",
+                "nivel_risco": "MEDIO",
+                "recomendacao": "Para o modulo Modulo de Producao de Oxigenio, recomenda-se verificacao tecnica imediata",
+                "prioridade": "media",
+                "data_estimada": "2026-09-08",
+                "acao_imediata": "Monitorar modulo"
+            }
+        }
+    ]
+}

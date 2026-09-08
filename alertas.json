@@ -1,0 +1,169 @@
+{
+    "alertas": [
+        {
+            "id": 1,
+            "modulo": "Modulo de Producao de Oxigenio",
+            "tipo_ocorrencia": "Falha no sensor",
+            "prioridade": "media",
+            "data": "2026-08-27",
+            "mensagem": "Parametro fora da faixa operacional segura",
+            "falha": false,
+            "critico": false,
+            "consumo_elevado": false
+        },
+        {
+            "id": 2,
+            "modulo": "Modulo de Suporte Vital",
+            "tipo_ocorrencia": "Pico de consumo energetico",
+            "prioridade": "media",
+            "data": "2026-08-21",
+            "mensagem": "Equipe de manutencao acionada para verificacao imediata",
+            "falha": true,
+            "critico": true,
+            "consumo_elevado": false
+        },
+        {
+            "id": 3,
+            "modulo": "Modulo de Producao de Oxigenio",
+            "tipo_ocorrencia": "Falha de comunicacao",
+            "prioridade": "critica",
+            "data": "2026-09-07",
+            "mensagem": "Sensor reportou leitura instavel nas ultimas 2 horas",
+            "falha": true,
+            "critico": true,
+            "consumo_elevado": false
+        },
+        {
+            "id": 4,
+            "modulo": "Modulo Habitacional B",
+            "tipo_ocorrencia": "Vazamento detectado",
+            "prioridade": "alta",
+            "data": "2026-08-19",
+            "mensagem": "Redundancia ativada automaticamente pelo sistema",
+            "falha": true,
+            "critico": true,
+            "consumo_elevado": false
+        },
+        {
+            "id": 5,
+            "modulo": "Modulo de Comunicacoes",
+            "tipo_ocorrencia": "Obstrucao no filtro",
+            "prioridade": "media",
+            "data": "2026-08-21",
+            "mensagem": "Equipe de manutencao acionada para verificacao imediata",
+            "falha": true,
+            "critico": true,
+            "consumo_elevado": false
+        },
+        {
+            "id": 6,
+            "modulo": "Modulo de Suporte Vital",
+            "tipo_ocorrencia": "Pico de consumo energetico",
+            "prioridade": "media",
+            "data": "2026-08-19",
+            "mensagem": "Redundancia ativada automaticamente pelo sistema",
+            "falha": true,
+            "critico": true,
+            "consumo_elevado": true
+        },
+        {
+            "id": 7,
+            "modulo": "Modulo de Comunicacoes",
+            "tipo_ocorrencia": "Queda de pressao",
+            "prioridade": "baixa",
+            "data": "2026-09-05",
+            "mensagem": "Necessaria inspecao presencial no proximo turno",
+            "falha": true,
+            "critico": false,
+            "consumo_elevado": false
+        },
+        {
+            "id": 8,
+            "modulo": "Modulo de Comunicacoes",
+            "tipo_ocorrencia": "Obstrucao no filtro",
+            "prioridade": "alta",
+            "data": "2026-09-03",
+            "mensagem": "Parametro fora da faixa operacional segura",
+            "falha": false,
+            "critico": false,
+            "consumo_elevado": false
+        },
+        {
+            "id": 9,
+            "modulo": "Modulo de Producao de Oxigenio",
+            "tipo_ocorrencia": "Pico de consumo energetico",
+            "prioridade": "media",
+            "data": "2026-08-28",
+            "mensagem": "Necessaria inspecao presencial no proximo turno",
+            "falha": true,
+            "critico": true,
+            "consumo_elevado": false
+        },
+        {
+            "id": 10,
+            "modulo": "Modulo Habitacional B",
+            "tipo_ocorrencia": "Temperatura fora do padrao",
+            "prioridade": "baixa",
+            "data": "2026-09-01",
+            "mensagem": "Necessaria inspecao presencial no proximo turno",
+            "falha": true,
+            "critico": false,
+            "consumo_elevado": true
+        },
+        {
+            "id": 11,
+            "modulo": "Modulo Habitacional A",
+            "tipo_ocorrencia": "Pico de consumo energetico",
+            "prioridade": "baixa",
+            "data": "2026-08-24",
+            "mensagem": "Parametro fora da faixa operacional segura",
+            "falha": true,
+            "critico": false,
+            "consumo_elevado": true
+        },
+        {
+            "id": 12,
+            "modulo": "Modulo de Producao de Oxigenio",
+            "tipo_ocorrencia": "Temperatura fora do padrao",
+            "prioridade": "critica",
+            "data": "2026-08-27",
+            "mensagem": "Parametro fora da faixa operacional segura",
+            "falha": false,
+            "critico": true,
+            "consumo_elevado": false
+        },
+        {
+            "id": 13,
+            "modulo": "Modulo de Producao de Oxigenio",
+            "tipo_ocorrencia": "Vazamento detectado",
+            "prioridade": "critica",
+            "data": "2026-09-06",
+            "mensagem": "Necessaria inspecao presencial no proximo turno",
+            "falha": false,
+            "critico": true,
+            "consumo_elevado": false
+        },
+        {
+            "id": 14,
+            "modulo": "Modulo Hidroponico",
+            "tipo_ocorrencia": "Vazamento detectado",
+            "prioridade": "media",
+            "data": "2026-09-06",
+            "mensagem": "Parametro fora da faixa operacional segura",
+            "falha": true,
+            "critico": true,
+            "consumo_elevado": false
+        },
+        {
+            "id": 15,
+            "modulo": "Modulo Habitacional A",
+            "tipo_ocorrencia": "Oscilacao de energia",
+            "prioridade": "baixa",
+            "data": "2026-09-01",
+            "mensagem": "Redundancia ativada automaticamente pelo sistema",
+            "falha": true,
+            "critico": true,
+            "consumo_elevado": false
+        }
+    ]
+}

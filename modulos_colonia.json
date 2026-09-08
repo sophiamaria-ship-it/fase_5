@@ -1,0 +1,92 @@
+{
+    "modulos": [
+        {
+            "id": 1,
+            "nome": "Modulo Hidroponico",
+            "status": "inativo",
+            "responsavel": "Ana Ferreira",
+            "setor": "Logistica",
+            "data_cadastro": "2026-09-04"
+        },
+        {
+            "id": 2,
+            "nome": "Modulo de Suporte Vital",
+            "status": "ativo",
+            "responsavel": "Bruno Castilho",
+            "setor": "Suporte Vital",
+            "data_cadastro": "2026-06-29"
+        },
+        {
+            "id": 3,
+            "nome": "Modulo Habitacional A",
+            "status": "inativo",
+            "responsavel": "Diego Salazar",
+            "setor": "Saneamento",
+            "data_cadastro": "2026-07-13"
+        },
+        {
+            "id": 4,
+            "nome": "Modulo de Producao de Oxigenio",
+            "status": "ativo",
+            "responsavel": "Bruno Castilho",
+            "setor": "Logistica",
+            "data_cadastro": "2026-07-27"
+        },
+        {
+            "id": 5,
+            "nome": "Modulo de Comunicacoes",
+            "status": "ativo",
+            "responsavel": "Carla Mendes",
+            "setor": "Agricultura",
+            "data_cadastro": "2026-08-28"
+        },
+        {
+            "id": 6,
+            "nome": "Modulo Habitacional B",
+            "status": "ativo",
+            "responsavel": "Carla Mendes",
+            "setor": "Habitacao",
+            "data_cadastro": "2026-09-02"
+        },
+        {
+            "id": 7,
+            "nome": "Modulo Medico",
+            "status": "inativo",
+            "responsavel": "Ana Ferreira",
+            "setor": "Logistica",
+            "data_cadastro": "2026-08-29"
+        },
+        {
+            "id": 8,
+            "nome": "Modulo de Energia Solar",
+            "status": "inativo",
+            "responsavel": "Carla Mendes",
+            "setor": "Saneamento",
+            "data_cadastro": "2026-06-10"
+        },
+        {
+            "id": 9,
+            "nome": "teste",
+            "status": "ativo",
+            "responsavel": "Marcio",
+            "setor": "Suporte de Vida",
+            "data_cadastro": "2026-09-08"
+        },
+        {
+            "id": 10,
+            "nome": "Teste",
+            "status": "ativo",
+            "responsavel": "Marcio",
+            "setor": "Suporte de Vida",
+            "data_cadastro": "2026-09-08"
+        },
+        {
+            "id": 11,
+            "nome": "Teste",
+            "status": "ativo",
+            "responsavel": "Marcio",
+            "setor": "Suporte de Vida",
+            "data_cadastro": "2026-09-08"
+        }
+    ]
+}
